@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_translation_flags',
     'ckeditor',
-    'django_countries',
     'widget_tweaks',
 
 
