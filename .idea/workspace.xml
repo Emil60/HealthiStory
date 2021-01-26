@@ -22,7 +22,6 @@
     <list default="true" id="06aac151-243c-4069-9f44-cc0686a970a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HealtiStory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HealtiStory/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django/djangonewssiteFF" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,6 +139,8 @@
       <workItem from="1599482656085" duration="2321000" />
       <workItem from="1611654486535" duration="3113000" />
       <workItem from="1611658931652" duration="1392000" />
+      <workItem from="1611660537350" duration="1019000" />
+      <workItem from="1611661579350" duration="168000" />
     </task>
     <servers />
   </component>
@@ -159,9 +160,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611659188357">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611661723667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611659188357" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611661723667" />
   </component>
 </project>
