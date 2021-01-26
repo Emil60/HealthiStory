@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -155,7 +156,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static/']
 LOCALE_PATHS = [
     BASE_DIR / 'locale'
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
@@ -167,3 +168,6 @@ LANGUAGES = [
     ('tr', 'Türkçe'),
     ('ru', 'Pусский'),
 ]
+
+
+django_heroku.settings(locals())
