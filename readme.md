@@ -24,7 +24,7 @@ Run in terminal: `pip3 install mysqlclient-2.0.1-cp38-cp38-linux_x86_64.whl`
 
 For Windows OS you can also install the package in the project:
 
- Run in terminal: `pip install mysqlclient-1.4.6-cp38-cp38-win_amd64.whl`
+ Run in terminal: `pip install mysqlclient-2.0.1-cp38-cp38-win_amd64.whl`
 
             
 ###### Next run: `pip install -r requirements.txt`

@@ -7,6 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 from .managers import UserManager
 from . import choices as c
 from django.utils import translation
+from django.conf import settings
 
 
 class Country(models.Model):
@@ -88,6 +89,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         default=False,
         help_text=_('Designates whether the user can log into this admin site.'),
     )
+    is_active = models.BooleanField(default=True)
 
     objects = UserManager()
 
@@ -121,5 +123,22 @@ class User(AbstractBaseUser, PermissionsMixin):
         return f"{self.name} {self.surname} passport ID: {self.passport}"
 
 
+class Question(models.Model):
+    theme = models.CharField(max_length=250, verbose_name=_("Theme"), blank=False, null=False)
+    text = models.TextField(verbose_name=_("Message"), blank=False, null=False)
+    date = models.DateTimeField(auto_now_add=True)
+    is_answered = models.BooleanField(default=False)
+    asked_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="questions")
 
+    def __str__(self):
+        return self.theme
+
+
+class Answer(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="answers")
+    text = models.TextField(verbose_name=_("Answer"), blank=False, null=False)
+    answer_time = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.question.theme
 

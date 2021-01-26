@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, HttpResponse
-from .forms import UserRegistrationForm, UserLoginForm, UserUpdateForm, CustomPasswordChangeForm
+from .forms import UserRegistrationForm, UserLoginForm, UserUpdateForm, CustomPasswordChangeForm, AskTheExpertForm
 from django.contrib.auth import login, logout, authenticate, update_session_auth_hash
 from django.contrib import messages
-from .models import City, District, Town
-from django.contrib.auth.forms import AuthenticationForm
+from .models import City, District, Town, Question
+from django.utils.translation import ugettext_lazy as _
 
 
 def user_register(request):
@@ -33,6 +33,7 @@ def user_login(request):
                 login(request, user)
                 return redirect('profile')
             else:
+                messages.success(request, _('Wrong password or User ID'))
                 return render(request, 'account/login.html', {'form': form})
         else:
             form = UserLoginForm()
@@ -92,7 +93,24 @@ def user_password_change(request):
 
 
 def user_ask_expert(request):
-    return HttpResponse('<h1>Soon available...</h1>')
+    """
+        Handle question asking from a user perspective
+    """
+    questions = Question.objects.filter(asked_by=request.user)
+    if request.method == "POST":
+        form = AskTheExpertForm(request.POST)
+        if form.is_valid():
+            obj = form.save(commit=False)
+            obj.asked_by = request.user
+            obj.save()
+            messages.success(request, _("We got your message"))
+            return render(request, 'account/ask_the_expert.html', {"form": form, "questions": questions})
+        else:
+            messages.error(request, _("Something went wrong please try again"))
+            return render(request, 'account/ask_the_expert.html', {"form": form, "questions": questions})
+    else:
+        form = AskTheExpertForm()
+        return render(request, 'account/ask_the_expert.html', {"form": form, "questions": questions })
 
 
 def user_reports(request):
@@ -114,3 +132,4 @@ def load_towns(request):
     district = request.GET.get('district')
     towns = Town.objects.filter(district_id=district)
     return render(request, 'account/city_dropdown_list_options.html', {'towns': towns})
+

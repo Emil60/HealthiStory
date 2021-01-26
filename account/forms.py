@@ -1,9 +1,8 @@
 from django.contrib.auth import password_validation
-from .models import User, Country, City, District, Town
+from .models import User, Country, City, District, Town, Question, Answer
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm
 from django.utils.translation import ugettext_lazy as _
-from django.core.exceptions import ValidationError
 
 
 class UserLoginForm(AuthenticationForm):
@@ -253,4 +252,10 @@ class CustomPasswordChangeForm(PasswordChangeForm):
         strip=False,
         widget=forms.PasswordInput(attrs={'autocomplete': 'new-password', 'id': 'confirm_password'}),
     )
+
+
+class AskTheExpertForm(forms.ModelForm):
+    class Meta:
+        model = Question
+        fields = ['theme', 'text']
 

@@ -26,7 +26,7 @@ def single_product_view(request, product_code):
     form = MobileHealthStationOrderForm()
     if product_code == 'Mobile_Medi-Lab':
         form = MobileHealthStationOrderForm()
-    elif product_code == 'Symptom_Check':
+    elif product_code == 'sc':
         form = SymptomCheckOrderForm()
     model1 = Product.objects.get(product_code=product_code, language=translation.get_language())
     if request.method == "POST":
@@ -55,7 +55,7 @@ def single_product_view(request, product_code):
                                                     </div>""")
                 messages.success(request, output)
                 return render(request, "product/single_product.html", {"product": model1, "form": form, "product_code": product_code})
-        elif product_code == 'Symptom_Check':
+        elif product_code == 'sc':
             form = SymptomCheckOrderForm(request.POST)
             if form.is_valid():
                 form_data = form.clean()

@@ -26,7 +26,6 @@ try {
                             },
                             success: function (data) {
                                 $("#id_town").html(data);
-                                console.log(data)
                             }
                         });
                     }
