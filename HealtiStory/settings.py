@@ -28,7 +28,7 @@ SECRET_KEY = '8vov@7i!dt$o2*pewek0&z8$s8$b@0mth-^n9105fyzzyq+(eq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['healthistory.herokuapp.com']
+ALLOWED_HOSTS = ['healthistory.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -168,6 +169,5 @@ LANGUAGES = [
     ('tr', 'Türkçe'),
     ('ru', 'Pусский'),
 ]
-
 
 django_heroku.settings(locals())
