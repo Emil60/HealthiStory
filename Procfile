@@ -1,1 +1,1 @@
-web:gunicorn HealthiStory.wsgi --log-file -
+web:gunicorn healthiStory.wsgi --log-file -
