@@ -33,7 +33,7 @@ def user_login(request):
                 login(request, user)
                 return redirect('profile')
             else:
-                messages.success(request, _('Wrong password or User ID'))
+                #messages.success(request, _('Wrong password or User ID'))
                 return render(request, 'account/login.html', {'form': form})
         else:
             form = UserLoginForm()

@@ -1896,8 +1896,8 @@ msgid "Privacy Policy"
 msgstr "Məxfilik haqqında bəyanat"
 
 #: .\templates\global\base.html:133
-msgid "Copyright &copy; 2020 All Rights Reserved by"
-msgstr "Bütün Hüquqlar Qorunur &copy; 2020"
+msgid "Copyright &copy; 2021 All Rights Reserved by"
+msgstr "Bütün Hüquqlar Qorunur &copy; 2021"
 
 #: .\templates\home\index.html:29
 msgid "Our Missions"

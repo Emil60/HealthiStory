@@ -1888,8 +1888,8 @@ msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
 #: .\templates\global\base.html:133
-msgid "Copyright &copy; 2020 All Rights Reserved by"
-msgstr "Telif hakkı © 2020 Tüm hakları saklıdır"
+msgid "Copyright &copy; 2021 All Rights Reserved by"
+msgstr "Telif hakkı © 2021 Tüm hakları saklıdır"
 
 #: .\templates\home\index.html:29
 msgid "Our Missions"
