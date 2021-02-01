@@ -1,0 +1,30 @@
+{% extends 'global/base.html' %}
+{% load static i18n%}
+
+{% block title %}
+    Our Locations
+{% endblock title %}
+
+{% block script %}
+    <script src="https://maps.googleapis.com/maps/api/js">
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha512-gauu0VKZq9ry8hOZHgNpcB2ogbSDojs+XLDItpOLY0IyA+KigeuT/suwSdPgfU/TGYLAn4Nan4OeaCa/UPr70Q==" crossorigin="anonymous"></script>
+<script>
+new GMaps({
+  div: '#map',
+  lat: 40.409264,
+  lng: 49.867092
+});
+</script>
+{% endblock script %}
+{% block content %}
+<div class="container">
+    <div id="map" style="width: 100%; height: 500px" class="mb-30"></div>
+</div>
+
+
+
+
+{% endblock content %}

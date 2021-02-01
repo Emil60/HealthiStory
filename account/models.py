@@ -61,7 +61,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(_('Name'), max_length=30, blank=False, null=True)
     surname = models.CharField(_('Surname'), max_length=30, blank=False, null=True)
     birthdate = models.DateField(_('Birthdate'), blank=False, null=True)
-    email = models.EmailField(_('Email address'), unique=True, null=True, blank=True)
+    email = models.EmailField(_('Email address'), unique=False, null=True, blank=True)
     phone = models.CharField(_('Phone'), max_length=50, null=True, blank=True)
     passport = models.CharField(_('User ID'), max_length=255, unique=True, null=True)
     card_number = models.CharField(_('Card number'), max_length=20, blank=True, null=True, unique=True)

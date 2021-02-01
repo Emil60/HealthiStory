@@ -16,6 +16,9 @@
 
     <link rel="stylesheet" href="{% static 'css/all.css' %}">
     <link rel="stylesheet" href="{% static 'css/myres.css' %}">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
 
 </head>
 
@@ -70,7 +73,7 @@
 
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">{% trans 'Home' %}</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">{% trans 'Locations' %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'location' %}">{% trans 'Locations' %}</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">{% trans 'Products' %}</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'contact-us' %}">{% trans 'Contact' %}</a>

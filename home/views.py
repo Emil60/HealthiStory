@@ -9,3 +9,8 @@ def home_view(request):
 def contact_us_view(request):
     """Render Contact us view"""
     return render(request, 'home/contact.html')
+
+
+def location(request):
+    """Render Contact us view"""
+    return render(request, 'home/location.html')

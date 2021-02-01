@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-10 22:05+0400\n"
+"POT-Creation-Date: 2021-02-01 19:45+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\account\choices.py:4 .\env\Lib\site-packages\django\forms\widgets.py:710
+#: .\account\choices.py:4
 msgid "Yes"
 msgstr "Bəli"
 
-#: .\account\choices.py:4 .\env\Lib\site-packages\django\forms\widgets.py:711
+#: .\account\choices.py:4
 msgid "No"
 msgstr "Xeyir"
 
-#: .\account\choices.py:12 .\env\Lib\site-packages\tests\settings.py:44
-#: .\product\choices.py:7
+#: .\account\choices.py:12 .\product\choices.py:7
 msgid "English"
 msgstr "İngiliscə"
 
@@ -160,1455 +159,224 @@ msgstr "Qara dərəli (Karib)"
 msgid "Black African"
 msgstr "Qara dərəli (Afrika)"
 
-#: .\account\forms.py:11 .\account\models.py:65
+#: .\account\forms.py:10 .\account\forms.py:264 .\account\models.py:66
 #: .\templates\account\account.html:85
 msgid "User ID"
 msgstr "İstifadəçi adı"
 
-#: .\account\forms.py:13
-#, fuzzy
-#| msgid "Change Password"
+#: .\account\forms.py:12
 msgid "Password"
 msgstr "Şifrəni dəyiştir"
 
-#: .\account\forms.py:18 .\account\forms.py:118 .\account\models.py:71
+#: .\account\forms.py:17 .\account\forms.py:117 .\account\models.py:72
 msgid "Country"
 msgstr "Ölkə"
 
-#: .\account\forms.py:19 .\account\forms.py:119 .\account\models.py:41
-#: .\account\models.py:74
+#: .\account\forms.py:18 .\account\forms.py:118 .\account\models.py:42
+#: .\account\models.py:75
 msgid "District"
 msgstr "Rayon"
 
-#: .\account\forms.py:20 .\account\forms.py:120 .\account\models.py:50
-#: .\account\models.py:75
+#: .\account\forms.py:19 .\account\forms.py:119 .\account\models.py:51
+#: .\account\models.py:76
 msgid "Town/Village"
 msgstr "Qəsəbə/Kənd"
 
-#: .\account\forms.py:21 .\account\forms.py:121 .\account\models.py:32
+#: .\account\forms.py:20 .\account\forms.py:120 .\account\models.py:33
 msgid "City"
 msgstr "Şəhər"
 
-#: .\account\forms.py:117
+#: .\account\forms.py:116
 msgid "Confirm Password"
 msgstr "Parol təkrar"
 
-#: .\account\forms.py:157 .\account\forms.py:164
+#: .\account\forms.py:156 .\account\forms.py:163
 msgid "City is required"
 msgstr ""
 
-#: .\account\forms.py:159
+#: .\account\forms.py:158
 msgid "District is required"
 msgstr ""
 
-#: .\account\forms.py:161
+#: .\account\forms.py:160
 msgid "Town is required"
 msgstr ""
 
-#: .\account\forms.py:168
+#: .\account\forms.py:167
 msgid "Your passwords do not match"
 msgstr ""
 
-#: .\account\forms.py:173
+#: .\account\forms.py:172
 msgid "Your passwords must be at least 6 characters"
 msgstr ""
 
-#: .\account\forms.py:177
+#: .\account\forms.py:176
 msgid ""
 "You have to enter one of EMAIL, PHONE or Citizen ID into the User ID field"
 msgstr ""
 "İstifadəçi ID sahəsinə E-poçt, Telefon və ya FIN ID-dən birini daxil edin"
 
-#: .\account\forms.py:241
-#, fuzzy
-#| msgid "Change Password"
+#: .\account\forms.py:240
 msgid "Old password"
 msgstr "Şifrəni dəyiştir"
 
-#: .\account\forms.py:246
-#, fuzzy
-#| msgid "Change Password"
+#: .\account\forms.py:245
 msgid "New password"
 msgstr "Şifrəni dəyiştir"
 
-#: .\account\forms.py:252
+#: .\account\forms.py:251
 msgid "New password confirmation"
 msgstr ""
 
-#: .\account\models.py:31
+#: .\account\models.py:32
 msgid "Code"
 msgstr "Kod"
 
-#: .\account\models.py:33
-#, fuzzy
-#| msgid "Phone"
+#: .\account\models.py:34
 msgid "Phone code"
 msgstr "Telefon"
 
-#: .\account\models.py:49
+#: .\account\models.py:50
 msgid "Neighborhood"
 msgstr ""
 
-#: .\account\models.py:51
+#: .\account\models.py:52
 msgid "Postal code"
 msgstr "Poçt kodu"
 
-#: .\account\models.py:60
+#: .\account\models.py:61
 msgid "Name"
 msgstr "Ad"
 
-#: .\account\models.py:61
+#: .\account\models.py:62
 msgid "Surname"
 msgstr "Soyad"
 
-#: .\account\models.py:62
+#: .\account\models.py:63
 msgid "Birthdate"
 msgstr "Doğum tarixi"
 
-#: .\account\models.py:63
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1589
+#: .\account\models.py:64
 msgid "Email address"
 msgstr "E-poçt adresi"
 
-#: .\account\models.py:64 .\product\forms.py:9 .\product\forms.py:33
+#: .\account\models.py:65 .\product\forms.py:9 .\product\forms.py:33
 #: .\templates\account\account.html:113
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\account\models.py:66
+#: .\account\models.py:67
 msgid "Card number"
 msgstr "Kart nömrəsi"
 
-#: .\account\models.py:67
+#: .\account\models.py:68
 msgid "Language"
 msgstr "Dil"
 
-#: .\account\models.py:68 .\templates\account\account.html:93
+#: .\account\models.py:69 .\templates\account\account.html:93
 msgid "Gender"
 msgstr "Cins"
 
-#: .\account\models.py:69
+#: .\account\models.py:70
 msgid "Height(cm)"
 msgstr "Boy(sm)"
 
-#: .\account\models.py:70
+#: .\account\models.py:71
 msgid "Blood Group"
 msgstr "Qan qrupu"
 
-#: .\account\models.py:73
+#: .\account\models.py:74
 msgid "City*"
 msgstr "Şəhər"
 
-#: .\account\models.py:76
+#: .\account\models.py:77
 msgid "Physical Activity"
 msgstr "Fiziki aktivlik"
 
-#: .\account\models.py:77
+#: .\account\models.py:78
 msgid "Smoking"
 msgstr "Siqaret"
 
-#: .\account\models.py:78
+#: .\account\models.py:79
 msgid "Diabets"
 msgstr "Diabet"
 
-#: .\account\models.py:79
+#: .\account\models.py:80
 msgid "Ethnicity"
 msgstr "İrq"
 
-#: .\account\models.py:80
+#: .\account\models.py:81
 msgid "ANGINA OR HEART ATTACK IN A 1ST DEGREE RELATIVE &lt;60?"
 msgstr "60 YAŞINDAN ƏVVƏL 1-ci DƏRƏCƏLİ QOHUMLARDA MIOKARD INFARKTI"
 
-#: .\account\models.py:81
+#: .\account\models.py:82
 msgid "Menopause"
 msgstr "MENOPAUZA DÖVRÜ"
 
-#: .\account\models.py:82
+#: .\account\models.py:83
 msgid "Kidney Disease"
 msgstr "XRONİK BÖYRƏK XƏSTƏLİYİ VAR?"
 
-#: .\account\models.py:83
+#: .\account\models.py:84
 msgid "Arterial Fibrillation"
 msgstr "ARTERIAL FİBRİLASYANIZ VAR?"
 
-#: .\account\models.py:84
+#: .\account\models.py:85
 msgid "DO YOU GETTING PRESSURE TREATMENT?"
 msgstr "HİPERTONİYA ƏLEHİNƏ MÜALİCƏ ALIRSINIZMI?"
 
-#: .\account\models.py:85
+#: .\account\models.py:86
 msgid "Rheumatoid Arthritis"
 msgstr "REMATİZMANİZ VAR?"
 
-#: .\account\models.py:87
+#: .\account\models.py:88
 msgid "staff status"
 msgstr ""
 
-#: .\account\models.py:89
+#: .\account\models.py:90
 msgid "Designates whether the user can log into this admin site."
 msgstr ""
 
-#: .\account\models.py:98
+#: .\account\models.py:100
 msgid "user"
 msgstr "İstifadəçi"
 
-#: .\account\models.py:99
+#: .\account\models.py:101
 msgid "users"
 msgstr "İstifadəçilər"
+
+#: .\account\models.py:127
+msgid "Theme"
+msgstr ""
+
+#: .\account\models.py:128
+msgid "Message"
+msgstr ""
+
+#: .\account\models.py:139
+msgid "Answer"
+msgstr ""
 
 #: .\account\validators.py:12 .\account\validators.py:15
 #, python-format
 msgid "Your password must contain at least %(min_length)d characters."
 msgstr "Parolunuz ən azı %(min_length)d simvoldan ibarət olmalıdır."
 
-#: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:129
-#: .\env\Lib\site-packages\crispy_forms\tests\test_form_helper.py:139
-#: .\env\Lib\site-packages\django\forms\fields.py:54
-msgid "This field is required."
-msgstr ""
-
-#: .\env\Lib\site-packages\crispy_forms\tests\test_layout.py:361
-msgid "i18n text"
-msgstr ""
-
-#: .\env\Lib\site-packages\crispy_forms\tests\test_layout.py:361
-msgid "i18n legend"
-msgstr ""
-
-#: .\env\Lib\site-packages\crispy_forms\tests\test_layout_objects.py:129
-#: .\env\Lib\site-packages\django\core\validators.py:20
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid value."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\contrib\messages\apps.py:7
-msgid "Messages"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\contrib\sitemaps\apps.py:7
-msgid "Site Maps"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\contrib\staticfiles\apps.py:9
-msgid "Static Files"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\contrib\syndication\apps.py:7
-#, fuzzy
-#| msgid "Locations"
-msgid "Syndication"
-msgstr "Məntəqələr"
-
-#: .\env\Lib\site-packages\django\core\paginator.py:48
-#, fuzzy
-#| msgid "Light smoker (less than 10)"
-msgid "That page number is not an integer"
-msgstr "Az çəkir (10dan az)"
-
-#: .\env\Lib\site-packages\django\core\paginator.py:50
-#, fuzzy
-#| msgid "Light smoker (less than 10)"
-msgid "That page number is less than 1"
-msgstr "Az çəkir (10dan az)"
-
-#: .\env\Lib\site-packages\django\core\paginator.py:55
-msgid "That page contains no results"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:91
-#: .\env\Lib\site-packages\django\forms\fields.py:671
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid URL."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\core\validators.py:145
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid integer."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\core\validators.py:156
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid email address."
-msgstr "E-poçt adresi"
-
-#. Translators: "letters" means latin letters: a-z and A-Z.
-#: .\env\Lib\site-packages\django\core\validators.py:230
-msgid ""
-"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:237
-msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:246
-#: .\env\Lib\site-packages\django\core\validators.py:266
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid IPv4 address."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\core\validators.py:251
-#: .\env\Lib\site-packages\django\core\validators.py:267
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid IPv6 address."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\core\validators.py:261
-#: .\env\Lib\site-packages\django\core\validators.py:265
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid IPv4 or IPv6 address."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\core\validators.py:295
-msgid "Enter only digits separated by commas."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:301
-#, python-format
-msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:334
-#, python-format
-msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:343
-#, python-format
-msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:353
-#, python-format
-msgid ""
-"Ensure this value has at least %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at least %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:368
-#, python-format
-msgid ""
-"Ensure this value has at most %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at most %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:387
-#: .\env\Lib\site-packages\django\forms\fields.py:292
-#: .\env\Lib\site-packages\django\forms\fields.py:327
-#, fuzzy
-#| msgid "Card number"
-msgid "Enter a number."
-msgstr "Kart nömrəsi"
-
-#: .\env\Lib\site-packages\django\core\validators.py:389
-#, python-format
-msgid "Ensure that there are no more than %(max)s digit in total."
-msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:394
-#, python-format
-msgid "Ensure that there are no more than %(max)s decimal place."
-msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:399
-#, python-format
-msgid ""
-"Ensure that there are no more than %(max)s digit before the decimal point."
-msgid_plural ""
-"Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:461
-#, python-format
-msgid ""
-"File extension “%(extension)s” is not allowed. Allowed extensions are: "
-"%(allowed_extensions)s."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\core\validators.py:513
-msgid "Null characters are not allowed."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\base.py:1190
-#: .\env\Lib\site-packages\django\forms\models.py:760
-msgid "and"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\base.py:1192
-#, python-format
-msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:100
-#, python-format
-msgid "Value %(value)r is not a valid choice."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:101
-msgid "This field cannot be null."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:102
-msgid "This field cannot be blank."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:103
-#, python-format
-msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
-
-#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
-#. Eg: "Title must be unique for pub_date year"
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:107
-#, python-format
-msgid ""
-"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:126
-#, python-format
-msgid "Field of type: %(field_type)s"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:939
-#, python-format
-msgid "“%(value)s” value must be either True or False."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:940
-#, python-format
-msgid "“%(value)s” value must be either True, False, or None."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:942
-msgid "Boolean (Either True or False)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:983
-#, python-format
-msgid "String (up to %(max_length)s)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1047
-msgid "Comma-separated integers"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1096
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
-"format."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1098
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1241
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
-"date."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1101
-msgid "Date (without time)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1239
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1243
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1247
-msgid "Date (with time)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1395
-#, python-format
-msgid "“%(value)s” value must be a decimal number."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1397
-#, fuzzy
-#| msgid "Card number"
-msgid "Decimal number"
-msgstr "Kart nömrəsi"
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1536
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1539
-#, fuzzy
-#| msgid "Description"
-msgid "Duration"
-msgstr "Ətraflı"
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1612
-msgid "File path"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1678
-#, python-format
-msgid "“%(value)s” value must be a float."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1680
-msgid "Floating point number"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1718
-#, python-format
-msgid "“%(value)s” value must be an integer."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1720
-msgid "Integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1803
-msgid "Big (8 byte) integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1819
-#, fuzzy
-#| msgid "Email address"
-msgid "IPv4 address"
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1850
-#, fuzzy
-#| msgid "Email address"
-msgid "IP address"
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1930
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1931
-#, python-format
-msgid "“%(value)s” value must be either None, True or False."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1933
-msgid "Boolean (Either True, False or None)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1976
-msgid "Positive big integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:1989
-msgid "Positive integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2002
-msgid "Positive small integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2016
-#, python-format
-msgid "Slug (up to %(max_length)s)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2048
-msgid "Small integer"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2055
-msgid "Text"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2083
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
-"format."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2085
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
-"invalid time."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2088
-msgid "Time"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2214
-msgid "URL"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2236
-msgid "Raw binary data"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2301
-#, python-format
-msgid "“%(value)s” is not a valid UUID."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\__init__.py:2303
-msgid "Universally unique identifier"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\files.py:231
-msgid "File"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\files.py:377
-msgid "Image"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\json.py:18
-msgid "A JSON object"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\json.py:20
-msgid "Value must be valid JSON."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\related.py:790
-#, python-format
-msgid "%(model)s instance with %(field)s %(value)r does not exist."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\related.py:792
-msgid "Foreign Key (type determined by related field)"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\related.py:1045
-msgid "One-to-one relationship"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\related.py:1099
-#, python-format
-msgid "%(from)s-%(to)s relationship"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\related.py:1100
-#, python-format
-msgid "%(from)s-%(to)s relationships"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\db\models\fields\related.py:1142
-msgid "Many-to-many relationship"
-msgstr ""
-
-#. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
-#: .\env\Lib\site-packages\django\forms\boundfield.py:150
-msgid ":?.!"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:247
-#, fuzzy
-#| msgid "Card number"
-msgid "Enter a whole number."
-msgstr "Kart nömrəsi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:398
-#: .\env\Lib\site-packages\django\forms\fields.py:1139
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid date."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:422
-#: .\env\Lib\site-packages\django\forms\fields.py:1140
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid time."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:450
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid date/time."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:484
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid duration."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:485
-#, python-brace-format
-msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:545
-msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:546
-msgid "No file was submitted."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:547
-msgid "The submitted file is empty."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:549
-#, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
-msgid_plural ""
-"Ensure this filename has at most %(max)d characters (it has %(length)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:552
-msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:613
-msgid ""
-"Upload a valid image. The file you uploaded was either not an image or a "
-"corrupted image."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:775
-#: .\env\Lib\site-packages\django\forms\fields.py:865
-#: .\env\Lib\site-packages\django\forms\models.py:1296
-#, python-format
-msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:866
-#: .\env\Lib\site-packages\django\forms\fields.py:981
-#: .\env\Lib\site-packages\django\forms\models.py:1295
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a list of values."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:982
-msgid "Enter a complete value."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\fields.py:1198
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid UUID."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\forms\fields.py:1228
-#, fuzzy
-#| msgid "Email address"
-msgid "Enter a valid JSON."
-msgstr "E-poçt adresi"
-
-#. Translators: This is the default suffix added to form field labels
-#: .\env\Lib\site-packages\django\forms\forms.py:78
-msgid ":"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\forms.py:205
-#, python-format
-msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\formsets.py:93
-msgid "ManagementForm data is missing or has been tampered with"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\formsets.py:345
-#, python-format
-msgid "Please submit %d or fewer forms."
-msgid_plural "Please submit %d or fewer forms."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\forms\formsets.py:352
-#, python-format
-msgid "Please submit %d or more forms."
-msgid_plural "Please submit %d or more forms."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\forms\formsets.py:379
-#: .\env\Lib\site-packages\django\forms\formsets.py:386
-#, fuzzy
-#| msgid "Order Now"
-msgid "Order"
-msgstr "Sifariş et"
-
-#: .\env\Lib\site-packages\django\forms\formsets.py:391
-msgid "Delete"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:755
-#, python-format
-msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:759
-#, python-format
-msgid "Please correct the duplicate data for %(field)s, which must be unique."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:765
-#, python-format
-msgid ""
-"Please correct the duplicate data for %(field_name)s which must be unique "
-"for the %(lookup)s in %(date_field)s."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:774
-msgid "Please correct the duplicate values below."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:1096
-msgid "The inline value did not match the parent instance."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:1180
-msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\models.py:1298
-#, python-format
-msgid "“%(pk)s” is not a valid value."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\utils.py:167
-#, python-format
-msgid ""
-"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
-"may be ambiguous or it may not exist."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\widgets.py:398
-msgid "Clear"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\widgets.py:399
-msgid "Currently"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\forms\widgets.py:400
-#, fuzzy
-#| msgid "Save Changes"
-msgid "Change"
-msgstr "Yadda saxla"
-
-#: .\env\Lib\site-packages\django\forms\widgets.py:709
-msgid "Unknown"
-msgstr ""
-
-#. Translators: Please do not add spaces around commas.
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:790
-msgid "yes,no,maybe"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:819
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:836
-#, python-format
-msgid "%(size)d byte"
-msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:838
-#, python-format
-msgid "%s KB"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:840
-#, python-format
-msgid "%s MB"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:842
-#, python-format
-msgid "%s GB"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:844
-#, python-format
-msgid "%s TB"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\template\defaultfilters.py:846
-#, python-format
-msgid "%s PB"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dateformat.py:65
-msgid "p.m."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dateformat.py:66
-msgid "a.m."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dateformat.py:71
-msgid "PM"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dateformat.py:72
-msgid "AM"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dateformat.py:149
-msgid "midnight"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dateformat.py:151
-msgid "noon"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:6
-msgid "Monday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:6
-msgid "Tuesday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:6
-msgid "Wednesday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:6
-msgid "Thursday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:6
-msgid "Friday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:7
-msgid "Saturday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:7
-msgid "Sunday"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:10
-msgid "Mon"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:10
-msgid "Tue"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:10
-msgid "Wed"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:10
-msgid "Thu"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:10
-msgid "Fri"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:11
-msgid "Sat"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:11
-#, fuzzy
-#| msgid "Surname"
-msgid "Sun"
-msgstr "Soyad"
-
-#: .\env\Lib\site-packages\django\utils\dates.py:14
-msgid "January"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:14
-msgid "February"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:14
-msgid "March"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:14
-msgid "April"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:14
-msgid "May"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:14
-msgid "June"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:15
-msgid "July"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:15
-msgid "August"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:15
-msgid "September"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:15
-msgid "October"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:15
-msgid "November"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:16
-#, fuzzy
-#| msgid "Card number"
-msgid "December"
-msgstr "Kart nömrəsi"
-
-#: .\env\Lib\site-packages\django\utils\dates.py:19
-msgid "jan"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:19
-msgid "feb"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:19
-msgid "mar"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:19
-msgid "apr"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:19
-msgid "may"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:19
-#, fuzzy
-#| msgid "Surname"
-msgid "jun"
-msgstr "Soyad"
-
-#: .\env\Lib\site-packages\django\utils\dates.py:20
-msgid "jul"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:20
-msgid "aug"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:20
-msgid "sep"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:20
-#, fuzzy
-#| msgid "Contact"
-msgid "oct"
-msgstr "Əlaqə"
-
-#: .\env\Lib\site-packages\django\utils\dates.py:20
-msgid "nov"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:20
-msgid "dec"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:23
-msgctxt "abbrev. month"
-msgid "Jan."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:24
-msgctxt "abbrev. month"
-msgid "Feb."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:25
-msgctxt "abbrev. month"
-msgid "March"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:26
-msgctxt "abbrev. month"
-msgid "April"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:27
-msgctxt "abbrev. month"
-msgid "May"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:28
-msgctxt "abbrev. month"
-msgid "June"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:29
-msgctxt "abbrev. month"
-msgid "July"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:30
-msgctxt "abbrev. month"
-msgid "Aug."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:31
-msgctxt "abbrev. month"
-msgid "Sept."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:32
-msgctxt "abbrev. month"
-msgid "Oct."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:33
-msgctxt "abbrev. month"
-msgid "Nov."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:34
-msgctxt "abbrev. month"
-msgid "Dec."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:37
-msgctxt "alt. month"
-msgid "January"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:38
-msgctxt "alt. month"
-msgid "February"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:39
-msgctxt "alt. month"
-msgid "March"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:40
-msgctxt "alt. month"
-msgid "April"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:41
-msgctxt "alt. month"
-msgid "May"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:42
-msgctxt "alt. month"
-msgid "June"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:43
-msgctxt "alt. month"
-msgid "July"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:44
-msgctxt "alt. month"
-msgid "August"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:45
-msgctxt "alt. month"
-msgid "September"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:46
-msgctxt "alt. month"
-msgid "October"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:47
-msgctxt "alt. month"
-msgid "November"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\dates.py:48
-#, fuzzy
-#| msgid "Card number"
-msgctxt "alt. month"
-msgid "December"
-msgstr "Kart nömrəsi"
-
-#: .\env\Lib\site-packages\django\utils\ipv6.py:8
-#, fuzzy
-#| msgid "Email address"
-msgid "This is not a valid IPv6 address."
-msgstr "E-poçt adresi"
-
-#: .\env\Lib\site-packages\django\utils\text.py:70
-#, python-format
-msgctxt "String to return when truncating text"
-msgid "%(truncated_text)s…"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\text.py:236
-msgid "or"
-msgstr ""
-
-#. Translators: This string is used as a separator between list elements
-#: .\env\Lib\site-packages\django\utils\text.py:255
-#: .\env\Lib\site-packages\django\utils\timesince.py:83
-msgid ", "
-msgstr ""
-
-#: .\env\Lib\site-packages\django\utils\timesince.py:9
-#, python-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\utils\timesince.py:10
-#, python-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\utils\timesince.py:11
-#, python-format
-msgid "%d week"
-msgid_plural "%d weeks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\utils\timesince.py:12
-#, python-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\utils\timesince.py:13
-#, python-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\utils\timesince.py:14
-#, python-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:110
-msgid "Forbidden"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:111
-msgid "CSRF verification failed. Request aborted."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:115
-msgid ""
-"You are seeing this message because this HTTPS site requires a “Referer "
-"header” to be sent by your Web browser, but none was sent. This header is "
-"required for security reasons, to ensure that your browser is not being "
-"hijacked by third parties."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:120
-msgid ""
-"If you have configured your browser to disable “Referer” headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for “same-"
-"origin” requests."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:124
-msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" …> for links to third-party sites."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:132
-msgid ""
-"You are seeing this message because this site requires a CSRF cookie when "
-"submitting forms. This cookie is required for security reasons, to ensure "
-"that your browser is not being hijacked by third parties."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:137
-msgid ""
-"If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for “same-origin” requests."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\csrf.py:142
-msgid "More information is available with DEBUG=True."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:41
-msgid "No year specified"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:61
-#: .\env\Lib\site-packages\django\views\generic\dates.py:111
-#: .\env\Lib\site-packages\django\views\generic\dates.py:208
-msgid "Date out of range"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:90
-msgid "No month specified"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:142
-msgid "No day specified"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:188
-msgid "No week specified"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:338
-#: .\env\Lib\site-packages\django\views\generic\dates.py:367
-#, python-format
-msgid "No %(verbose_name_plural)s available"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:589
-#, python-format
-msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\dates.py:623
-#, python-format
-msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\detail.py:54
-#, python-format
-msgid "No %(verbose_name)s found matching the query"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\list.py:67
-msgid "Page is not “last”, nor can it be converted to an int."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\list.py:72
-#, python-format
-msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\generic\list.py:154
-#, python-format
-msgid "Empty list and “%(class_name)s.allow_empty” is False."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\static.py:40
-msgid "Directory indexes are not allowed here."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\static.py:42
-#, python-format
-msgid "“%(path)s” does not exist"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\static.py:80
-#, python-format
-msgid "Index of %(directory)s"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:7
-msgid "Django: the Web framework for perfectionists with deadlines."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:346
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:368
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:369
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:384
-msgid "Django Documentation"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:385
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:396
-msgid "Tutorial: A Polling App"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:397
-msgid "Get started with Django"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:408
-msgid "Django Community"
-msgstr ""
-
-#: .\env\Lib\site-packages\django\views\templates\default_urlconf.html:409
-msgid "Connect, get help, or contribute"
-msgstr ""
-
-#: .\env\Lib\site-packages\tests\settings.py:45
-msgid "Brazilian Portuguese"
-msgstr ""
+#: .\account\views.py:28
+msgid "Password Reset Requested"
+msgstr "Şifrənin sıfırlanması tələb olunur"
+
+#: .\account\views.py:43
+msgid "Invalid header found."
+msgstr "Yanlış başlıq tapıldı."
+
+#: .\account\views.py:147
+msgid "We got your message"
+msgstr "Mesajınızı aldıq"
+
+#: .\account\views.py:150
+msgid "Something went wrong please try again"
+msgstr "Xəta baş verdi, yenidən cəhd edin"
 
 #: .\product\forms.py:7 .\product\forms.py:31
 #: .\templates\account\account.html:105
@@ -1711,7 +479,7 @@ msgstr ""
 "\"Məhsulların miqdarı\"-da ən azı bir sahəni doldurun\n"
 "                                            </div>"
 
-#: .\product\views.py:52 .\product\views.py:71
+#: .\product\views.py:52
 msgid ""
 "<div class=\"alert alert-danger alert-dismissable text-center\">\n"
 "                                                    <button type=\"button\" "
@@ -1727,9 +495,30 @@ msgstr ""
 "\" formasında məcburi sahələri doldurun!\n"
 "                                            </div>"
 
-#: .\readme.txt:5
-msgid "Mətn"
+#: .\product\views.py:71
+#, fuzzy
+#| msgid ""
+#| "<div class=\"alert alert-danger alert-dismissable text-center\">\n"
+#| "                                                    <button type=\"button"
+#| "\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">×</"
+#| "button>\n"
+#| "                                                    ERROR: Please fill "
+#| "the mandatory fields in the \"Order Now\" form!\n"
+#| "                                                    </div>"
+msgid ""
+"<div class=\"alert alert-danger alert-dismissable text-center\">\n"
+"                                    <button type=\"button\" class=\"close\" "
+"data-dismiss=\"alert\" aria-hidden=\"true\">×</button>\n"
+"                                    ERROR: Please fill the mandatory fields "
+"in the \"Order Now\" form!\n"
+"                                    </div>"
 msgstr ""
+"<div class=\"alert alert-danger alert-dismissable text-center\">\n"
+"                                            <button type=\"button\" class="
+"\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">×</button>\n"
+"                                            XƏTA: Zəhmət olmasa \"Sifariş et"
+"\" formasında məcburi sahələri doldurun!\n"
+"                                            </div>"
 
 #: .\templates\account\account.html:24
 msgid "Welcome"
@@ -1740,12 +529,14 @@ msgid "Last Log In"
 msgstr "Sistemə son giriş"
 
 #: .\templates\account\account.html:45
+#: .\templates\account\ask_the_expert.html:31
 #: .\templates\account\change_password.html:37
 #: .\templates\account\editAccount.html:37
 msgid "Profile Info"
 msgstr "Profil Məlumatları"
 
 #: .\templates\account\account.html:48
+#: .\templates\account\ask_the_expert.html:34
 #: .\templates\account\change_password.html:40
 #: .\templates\account\editAccount.html:40
 #: .\templates\account\editAccount.html:62
@@ -1753,6 +544,7 @@ msgid "Edit Profile"
 msgstr "Məlumatları dəyişdir "
 
 #: .\templates\account\account.html:51
+#: .\templates\account\ask_the_expert.html:37
 #: .\templates\account\change_password.html:43
 #: .\templates\account\change_password.html:63
 #: .\templates\account\editAccount.html:43
@@ -1760,26 +552,24 @@ msgid "Change Password"
 msgstr "Şifrəni dəyiştir"
 
 #: .\templates\account\account.html:54
+#: .\templates\account\ask_the_expert.html:40
 #: .\templates\account\change_password.html:46
 #: .\templates\account\editAccount.html:46
 msgid "Reports"
-msgstr ""
+msgstr "Hesabatlar"
 
 #: .\templates\account\account.html:57
+#: .\templates\account\ask_the_expert.html:43
 #: .\templates\account\change_password.html:49
 #: .\templates\account\editAccount.html:49
 msgid "Ask the expert"
-msgstr ""
+msgstr "Mütəxəssisdən soruşun"
 
 #: .\templates\account\account.html:69
-#, fuzzy
-#| msgid "Name"
 msgid "Full Name"
 msgstr "Ad"
 
 #: .\templates\account\account.html:77
-#, fuzzy
-#| msgid "Birthdate"
 msgid "Birthday"
 msgstr "Doğum tarixi"
 
@@ -1805,25 +595,85 @@ msgstr "Ulduzlu sahələr doldurulmalıdır"
 msgid "Save Changes"
 msgstr "Yadda saxla"
 
-#: .\templates\account\login.html:32 .\templates\global\base.html:84
+#: .\templates\account\login.html:40 .\templates\global\base.html:87
 msgid "Login"
 msgstr "Daxil ol"
 
-#: .\templates\account\login.html:33
+#: .\templates\account\login.html:42
 msgid "Log In with face recognition"
 msgstr "Üz tanınması ilə daxil ol"
 
-#: .\templates\account\login.html:41
+#: .\templates\account\login.html:50
 msgid "Don't have an account?"
 msgstr "Hesabınız yoxdur?"
 
-#: .\templates\account\login.html:41
+#: .\templates\account\login.html:51
 msgid "Sign Up"
 msgstr "Qeydiyyatdan keçin"
 
-#: .\templates\account\login.html:44
+#: .\templates\account\login.html:54
 msgid "Forgot your password?"
 msgstr "Parolunuzu unutmusunuz?"
+
+#: .\templates\account\password_reset_complete.html:9
+msgid "Your password has been changed. You may go ahead and"
+msgstr "Şifrəniz dəyiştirildi. İndi siz"
+
+#: .\templates\account\password_reset_complete.html:10
+msgid "sign in"
+msgstr "buradan"
+
+#: .\templates\account\password_reset_complete.html:11
+msgid "now"
+msgstr "daxil ola bilərsiz"
+
+#: .\templates\account\password_reset_confirm.html:12
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Zəhmət olmasa yeni parolunuzu 2 dəfə daxil edin ki,"
+"düzgün yazdığınızı təsdiq edə bilək."
+
+#: .\templates\account\password_reset_confirm.html:32
+msgid "Change my password"
+msgstr "Şifrəni dəyiştir"
+
+#: .\templates\account\password_reset_confirm.html:38
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"Şifrə sıfırlama bağlantısı etibarsız oldu, ehtimal ki, artıq istifadə edilmiştir. "
+"Xahiş edirik yeni bir şifrə sıfırlanması tələb edin."
+
+#: .\templates\account\password_reset_done.html:9
+msgid ""
+"We've emailed you instructions for setting your password, <b>if an account "
+"exists</b> with the email you entered. You should receive them shortly."
+msgstr ""
+"Daxil etdiyiniz e-poçtla <b>bir hesab varsa </b>, parolunuzu təyin etmək üçün təlimatları e-poçtla göndərdik. "
+"Onları qısa müddətdə almalısınız"
+
+#: .\templates\account\password_reset_done.html:12
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Bir e-poçt almazsanız, qeydiyyatdan keçdiyiniz ünvanı daxil etdiyinizə əmin olun "
+"və spam qovluğunuzu yoxlayın."
+
+#: .\templates\account\password_reset_done.html:14
+msgid "Return to home page"
+msgstr "Ana səhifəyə dön"
+
+#: .\templates\account\password_reset_form.html:9
+msgid "Reset password"
+msgstr "Şifrəni yenilə"
+
+#: .\templates\account\password_reset_form.html:11
+msgid "Send reset email"
+msgstr "Sıfırlama e-poçtu göndərin"
 
 #: .\templates\account\register.html:46
 msgid "Registration"
@@ -1837,40 +687,40 @@ msgstr "(Şəxsiyyət Vəsiqəsi nömrəsi və ya E-poçt ünvanı və ya Mobil 
 msgid "Register"
 msgstr "Qeyd edin"
 
-#: .\templates\global\base.html:39
+#: .\templates\global\base.html:42
 msgid "Sign in"
 msgstr "Daxil olun"
 
-#: .\templates\global\base.html:45
+#: .\templates\global\base.html:48
 msgid "Log out"
 msgstr "Çıxış"
 
-#: .\templates\global\base.html:72
+#: .\templates\global\base.html:75
 msgid "Home"
 msgstr "Ana Səhifə"
 
-#: .\templates\global\base.html:73
+#: .\templates\global\base.html:76
 msgid "Locations"
 msgstr "Məntəqələr"
 
-#: .\templates\global\base.html:74 .\templates\global\base.html:123
+#: .\templates\global\base.html:77 .\templates\global\base.html:126
 #: .\templates\product\products.html:16
 msgid "Products"
 msgstr "Məhsullar"
 
-#: .\templates\global\base.html:76
+#: .\templates\global\base.html:79
 msgid "Contact"
 msgstr "Əlaqə"
 
-#: .\templates\global\base.html:79
+#: .\templates\global\base.html:82
 msgid "My Account"
 msgstr "Hesabım"
 
-#: .\templates\global\base.html:111
+#: .\templates\global\base.html:114
 msgid "About"
 msgstr "Haqqımızda"
 
-#: .\templates\global\base.html:112
+#: .\templates\global\base.html:115
 msgid ""
 "HealthiStory is a health focused company that revolutionizes how people "
 "access health checkups and use their medical data to manage long term health."
@@ -1879,23 +729,23 @@ msgstr ""
 "olmasında və tibbi məlumatların uzunmüddətli sağlamlığı idarə etmək üçün "
 "necə istifadə edilməsində inqilab edən bir sağlamlıq şirkətidir."
 
-#: .\templates\global\base.html:119
+#: .\templates\global\base.html:122
 msgid "Quick Links"
 msgstr "Tez Linklər"
 
-#: .\templates\global\base.html:121
+#: .\templates\global\base.html:124
 msgid "About Us"
 msgstr "Haqqımızda"
 
-#: .\templates\global\base.html:122 .\templates\home\contact.html:11
+#: .\templates\global\base.html:125 .\templates\home\contact.html:11
 msgid "Contact Us"
 msgstr "Bizimlə Əlaqə"
 
-#: .\templates\global\base.html:124
+#: .\templates\global\base.html:127
 msgid "Privacy Policy"
 msgstr "Məxfilik haqqında bəyanat"
 
-#: .\templates\global\base.html:133
+#: .\templates\global\base.html:136
 msgid "Copyright &copy; 2021 All Rights Reserved by"
 msgstr "Bütün Hüquqlar Qorunur &copy; 2021"
 
@@ -2374,6 +1224,162 @@ msgstr "Məhsulların miqdarı"
 #: .\templates\product\single_product.html:366
 msgid "Send Quotation request"
 msgstr "Sifariş istəyini göndər"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid value."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Locations"
+#~ msgid "Syndication"
+#~ msgstr "Məntəqələr"
+
+#, fuzzy
+#~| msgid "Light smoker (less than 10)"
+#~ msgid "That page number is not an integer"
+#~ msgstr "Az çəkir (10dan az)"
+
+#, fuzzy
+#~| msgid "Light smoker (less than 10)"
+#~ msgid "That page number is less than 1"
+#~ msgstr "Az çəkir (10dan az)"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid URL."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid integer."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid email address."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid IPv4 address."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid IPv6 address."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid IPv4 or IPv6 address."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Card number"
+#~ msgid "Enter a number."
+#~ msgstr "Kart nömrəsi"
+
+#, fuzzy
+#~| msgid "Card number"
+#~ msgid "Decimal number"
+#~ msgstr "Kart nömrəsi"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Duration"
+#~ msgstr "Ətraflı"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "IPv4 address"
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "IP address"
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Card number"
+#~ msgid "Enter a whole number."
+#~ msgstr "Kart nömrəsi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid date."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid time."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid date/time."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid duration."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a list of values."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid UUID."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Enter a valid JSON."
+#~ msgstr "E-poçt adresi"
+
+#, fuzzy
+#~| msgid "Order Now"
+#~ msgid "Order"
+#~ msgstr "Sifariş et"
+
+#, fuzzy
+#~| msgid "Save Changes"
+#~ msgid "Change"
+#~ msgstr "Yadda saxla"
+
+#, fuzzy
+#~| msgid "Surname"
+#~ msgid "Sun"
+#~ msgstr "Soyad"
+
+#, fuzzy
+#~| msgid "Card number"
+#~ msgid "December"
+#~ msgstr "Kart nömrəsi"
+
+#, fuzzy
+#~| msgid "Surname"
+#~ msgid "jun"
+#~ msgstr "Soyad"
+
+#, fuzzy
+#~| msgid "Contact"
+#~ msgid "oct"
+#~ msgstr "Əlaqə"
+
+#, fuzzy
+#~| msgid "Card number"
+#~ msgctxt "alt. month"
+#~ msgid "December"
+#~ msgstr "Kart nömrəsi"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "This is not a valid IPv6 address."
+#~ msgstr "E-poçt adresi"
 
 #, fuzzy
 #~| msgid "High"

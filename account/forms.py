@@ -1,7 +1,7 @@
 from django.contrib.auth import password_validation
 from .models import User, Country, City, District, Town, Question, Answer
 from django import forms
-from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm
+from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm, PasswordResetForm
 from django.utils.translation import ugettext_lazy as _
 
 
@@ -259,3 +259,6 @@ class AskTheExpertForm(forms.ModelForm):
         model = Question
         fields = ['theme', 'text']
 
+
+class CustomPasswordResetForm(PasswordResetForm):
+    email = forms.CharField(label=_('User ID'))
