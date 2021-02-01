@@ -622,11 +622,11 @@ msgstr "Ваш пароль был успешно изменен. Теперь �
 
 #: .\templates\account\password_reset_complete.html:10
 msgid "sign in"
-msgstr "отсюда"
+msgstr "войти в систему"
 
 #: .\templates\account\password_reset_complete.html:11
 msgid "now"
-msgstr "войти в систему"
+msgstr " "
 
 #: .\templates\account\password_reset_confirm.html:12
 msgid ""
