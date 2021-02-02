@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06aac151-243c-4069-9f44-cc0686a970a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HealtiStory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HealtiStory/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +145,7 @@
       <workItem from="1611660537350" duration="1019000" />
       <workItem from="1611661579350" duration="3508000" />
       <workItem from="1611675822418" duration="4597000" />
-      <workItem from="1612170370191" duration="13632000" />
+      <workItem from="1612170370191" duration="18036000" />
     </task>
     <servers />
   </component>

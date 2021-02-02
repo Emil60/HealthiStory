@@ -32,6 +32,7 @@ def mobile_station_order_send_mail(**kwargs):
     else:
         return 0
 
+
 def symptom_check_order_send_mail(**kwargs):
     """Send mail to user with order information"""
     email_from = settings.EMAIL_HOST_USER
