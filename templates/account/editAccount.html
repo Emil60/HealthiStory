@@ -64,37 +64,10 @@
                                             {% csrf_token %}
                                             <div class="row mt-3">
                                                 <div class="form-group col-sm-4">
-                                                    {{ form.name|as_crispy_field }}
+                                                    {{ user_form.name|as_crispy_field }}
                                                 </div>
                                                 <div class="form-group col-sm-4">
-                                                    {{ form.surname|as_crispy_field }}
-                                                </div>
-                                            </div>
-
-                                            <hr>
-
-                                            <div class="row">
-                                                <div class="form-group col-sm-4">
-                                                    {{ form.language|as_crispy_field }}
-                                                </div>
-                                                <div class="form-group col-sm-4">
-                                                    {{ form.email|as_crispy_field }}
-                                                </div>
-                                                <div class="form-group col-sm-4">
-                                                    {{ form.phone|as_crispy_field }}
-                                                </div>
-                                            </div>
-
-                                            <hr>
-                                            <div class="row">
-                                                <div class="form-group col-sm-4">
-                                                    {{ form.gender|as_crispy_field }}
-                                                </div>
-                                                <div class="form-group col-sm-4">
-                                                    {{ form.height|as_crispy_field }}
-                                                </div>
-                                                <div class="form-group col-sm-4">
-                                                    {{ form.blood_group|as_crispy_field }}
+                                                    {{ user_form.surname|as_crispy_field }}
                                                 </div>
                                             </div>
 
@@ -102,15 +75,42 @@
 
                                             <div class="row">
                                                 <div class="form-group col-sm-4">
-                                                    {{ form.country|as_crispy_field }}
+                                                    {{ profile_form.language|as_crispy_field }}
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    {{ user_form.email|as_crispy_field }}
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    {{ user_form.phone|as_crispy_field }}
+                                                </div>
+                                            </div>
+
+                                            <hr>
+                                            <div class="row">
+                                                <div class="form-group col-sm-4">
+                                                    {{ profile_form.gender|as_crispy_field }}
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    {{ profile_form.height|as_crispy_field }}
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    {{ profile_form.blood_group|as_crispy_field }}
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="form-group col-sm-4">
+                                                    {{ profile_form.country|as_crispy_field }}
                                                 </div>
                                                 <div class="form-group col-sm-4">
                                                     <div id="city_country">
-                                                        {{ form.city|as_crispy_field }}
+                                                        {{ profile_form.city|as_crispy_field }}
                                                     </div>
 
                                                     <div id="city2_country">
-                                                        {{ form.city2|as_crispy_field }}
+                                                        {{ profile_form.city2|as_crispy_field }}
                                                     </div>
                                                 </div>
 
@@ -119,10 +119,10 @@
                                             </div>
                                             <div class="row" id="turkey_based">
                                                 <div class="form-group col-sm-4">
-                                                    {{ form.district|as_crispy_field }}
+                                                    {{ profile_form.district|as_crispy_field }}
                                                 </div>
                                                 <div class="form-group col-sm-4">
-                                                    {{ form.town|as_crispy_field }}
+                                                    {{ profile_form.town|as_crispy_field }}
                                                 </div>
 
                                             </div>
@@ -136,21 +136,21 @@
                                             <div class="row">
 
                                                 <div class="form-group col-sm-3">
-                                                    {{ form.smoking|as_crispy_field }}
+                                                    {{ profile_form.smoking|as_crispy_field }}
                                                 </div>
 
 
                                                 <div class="form-group col-sm-3">
-                                                    {{ form.diabets|as_crispy_field }}
+                                                    {{ profile_form.diabets|as_crispy_field }}
                                                 </div>
 
 
                                                 <div class="form-group col-sm-3">
-                                                    {{ form.ethnicity|as_crispy_field }}
+                                                    {{ profile_form.ethnicity|as_crispy_field }}
                                                 </div>
 
                                                 <div class="form-group col-sm-3">
-                                                    {{ form.physical_activity|as_crispy_field }}
+                                                    {{ profile_form.physical_activity|as_crispy_field }}
                                                 </div>
                                             </div>
 
@@ -160,20 +160,20 @@
 
                                                 <div class="row row-divided">
                                                     <div class="col-md col-sm-12">
-                                                        <div class="col-md col-sm-12">{{ form.angina_or_heart_attack|as_crispy_field }}</div>
+                                                        <div class="col-md col-sm-12">{{ profile_form.angina_or_heart_attack|as_crispy_field }}</div>
                                                         <hr class="survey-separator">
-                                                        <div class="col-md col-sm-12">{{ form.pressure_treatment|as_crispy_field }}</div>
+                                                        <div class="col-md col-sm-12">{{ profile_form.pressure_treatment|as_crispy_field }}</div>
                                                         <hr class="survey-separator">
-                                                        <div class="col-md col-sm-12">{{ form.rheumatoid_arthritis|as_crispy_field }}</div>
+                                                        <div class="col-md col-sm-12">{{ profile_form.rheumatoid_arthritis|as_crispy_field }}</div>
                                                     </div>
                                                     <div class="vl"></div>
                                                     <div class="col-md col-sm-12">
-                                                        <div class="col-md col-sm-12">{{ form.kidney_disease|as_crispy_field }}</div>
+                                                        <div class="col-md col-sm-12">{{ profile_form.kidney_disease|as_crispy_field }}</div>
                                                         <hr class="survey-separator">
-                                                        <div class="col-md col-sm-12">{{ form.atrial_fibrillation|as_crispy_field }}</div>
+                                                        <div class="col-md col-sm-12">{{ profile_form.atrial_fibrillation|as_crispy_field }}</div>
                                                         <hr class="survey-separator">
                                                         <div class="col-md col-sm-12"
-                                                             id="female-only-survey">{{ form.menopause|as_crispy_field }}</div>
+                                                             id="female-only-survey">{{ profile_form.menopause|as_crispy_field }}</div>
                                                     </div>
                                                 </div>
                                             </div>

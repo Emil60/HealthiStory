@@ -12,16 +12,23 @@ def home_view(request):
         ip = x_forwarded_for.split(',')[0]
     else:
         ip = request.META.get('REMOTE_ADDR')
-    response = reader.city(ip)
-    email_from = settings.EMAIL_HOST_USER
-    subject = "Country Check"
-    message = f"""
-                IP: {ip}
-                Country ISO code: {response.country.iso_code}
-                Country name: {response.country.name}
-                City Name: {response.city.name}"""
-    recipient_list = ['ojagverdiyev13@gmail.com']
-    send_mail(subject, message, email_from, recipient_list)
+    try:
+        response = reader.city(ip)
+        email_from = settings.EMAIL_HOST_USER
+        subject = "Country Check"
+        message = f"""
+                    IP: {ip}
+                    Country ISO code: {response.country.iso_code}
+                    Country name: {response.country.name}
+                    City Name: {response.city.name}"""
+        recipient_list = ['ojagverdiyev13@gmail.com']
+        send_mail(subject, message, email_from, recipient_list)
+    except:
+        email_from = settings.EMAIL_HOST_USER
+        subject = "Country Check"
+        message = "gg country check"
+        recipient_list = ['ojagverdiyev13@gmail.com']
+        send_mail(subject, message, email_from, recipient_list)
 
     reader.close()
     return render(request, 'home/index.html')

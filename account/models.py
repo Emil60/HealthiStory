@@ -3,11 +3,14 @@ from django.db import models
 from django.core.mail import send_mail
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.base_user import AbstractBaseUser
+from django.contrib.auth.models import AbstractUser
 from django.utils.translation import ugettext_lazy as _
 from .managers import UserManager
 from . import choices as c
 from django.utils import translation
 from django.conf import settings
+from django.dispatch import receiver
+from django.db.models.signals import post_save
 
 
 class Country(models.Model):
@@ -56,14 +59,28 @@ class Town(models.Model):
         return self.name
 
 
-class User(AbstractBaseUser, PermissionsMixin):
-
-    name = models.CharField(_('Name'), max_length=30, blank=False, null=True)
-    surname = models.CharField(_('Surname'), max_length=30, blank=False, null=True)
+class User(AbstractUser):
+    is_regular_user = models.BooleanField(default=False)
+    is_doctor = models.BooleanField(default=False)
+    username = models.CharField(_('User ID'), max_length=255, unique=True, null=True)
+    first_name = models.CharField(_('Name'), max_length=30, blank=False, null=True)
+    last_name = models.CharField(_('Surname'), max_length=30, blank=False, null=True)
     birthdate = models.DateField(_('Birthdate'), blank=False, null=True)
     email = models.EmailField(_('Email address'), unique=False, null=True, blank=True)
     phone = models.CharField(_('Phone'), max_length=50, null=True, blank=True)
-    passport = models.CharField(_('User ID'), max_length=255, unique=True, null=True)
+    is_staff = models.BooleanField(
+        _('staff status'),
+        default=False,
+        help_text=_('Designates whether the user can log into this admin site.'),
+    )
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"User ID:{self.username}"
+
+
+class RegularUser(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, related_name="regular_user_profile")
     card_number = models.CharField(_('Card number'), max_length=20, blank=True, null=True, unique=True)
     language = models.CharField(choices=c.LANGUAGE_CHOICES, default=c.ENGLISH_LANG, max_length=50, null=True, verbose_name=_("Language"))
     gender = models.CharField(choices=c.GENDER_CHOICES, default=c.FEMALE_GENDER, max_length=50, null=True, verbose_name=_("Gender"))
@@ -84,43 +101,51 @@ class User(AbstractBaseUser, PermissionsMixin):
     atrial_fibrillation = models.BooleanField(_('Arterial Fibrillation'), choices=c.BOOL_CHOICES, null=True, default=False)
     pressure_treatment = models.BooleanField(choices=c.BOOL_CHOICES, null=True, default=False, verbose_name=_("DO YOU GETTING PRESSURE TREATMENT?"))
     rheumatoid_arthritis = models.BooleanField(_('Rheumatoid Arthritis'), choices=c.BOOL_CHOICES, null=True, default=False)
-    is_staff = models.BooleanField(
-        _('staff status'),
-        default=False,
-        help_text=_('Designates whether the user can log into this admin site.'),
-    )
-    is_active = models.BooleanField(default=True)
-
-    objects = UserManager()
-
-    USERNAME_FIELD = 'passport'
-    REQUIRED_FIELDS = []
-
-    class Meta:
-        verbose_name = _('user')
-        verbose_name_plural = _('users')
-
-    def get_full_name(self):
-        '''
-        Returns the first_name plus the last_name, with a space in between.
-        '''
-        full_name = '%s %s' % (self.name, self.surname)
-        return full_name.strip()
-
-    def get_short_name(self):
-        '''
-        Returns the short name for the user.
-        '''
-        return self.name
 
     def email_user(self, subject, message, from_email=None, **kwargs):
         '''
         Sends an email to this User.
         '''
-        send_mail(subject, message, from_email, [self.email], **kwargs)
+        send_mail(subject, message, from_email, [self.user.email], **kwargs)
 
     def __str__(self):
-        return f"{self.name} {self.surname} passport ID: {self.passport}"
+        return f"Doctor ID: {self.user.username}"
+
+
+class DoctorCategory(models.Model):
+    cat_name = models.CharField(max_length=150)
+
+
+class DoctorUser(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, related_name="doctor_profile")
+    category = models.ForeignKey(DoctorCategory, on_delete=models.CASCADE, null=True)
+    organisation = models.CharField(max_length=250, null=True)
+    certificates = models.CharField(max_length=250, null=True)
+    image = models.CharField(max_length=250, null=True)
+
+    def __str__(self):
+        return f"Doctor ID: {self.user.username}"
+
+
+class OperatorUser(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='operator_user')
+    organisation = models.CharField(max_length=250)
+
+
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if instance.is_doctor:
+        DoctorUser.objects.get_or_create(user=instance)
+    else:
+        RegularUser.objects.get_or_create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    if instance.is_doctor:
+        instance.doctor_profile.save()
+    else:
+        RegularUser.objects.get_or_create(user=instance)
 
 
 class Question(models.Model):

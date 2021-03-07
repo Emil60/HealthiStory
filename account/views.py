@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, HttpResponse
-from .forms import UserRegistrationForm, UserLoginForm, UserUpdateForm, CustomPasswordChangeForm, AskTheExpertForm, CustomPasswordResetForm
+from .forms import RegularUserProfileForm, UserLoginForm, CustomPasswordChangeForm, AskTheExpertForm, \
+    CustomPasswordResetForm, UserRegistrationForm, RegularUserUpdateForm, UserUpdateForm
 from django.contrib.auth import login, logout, authenticate, update_session_auth_hash
 from django.contrib import messages
-from .models import City, District, Town, Question, User
+from .models import City, District, Town, Question, User, RegularUser
 from django.utils.translation import ugettext_lazy as _
 from django.conf import settings
 from django.contrib.auth.tokens import default_token_generator
@@ -48,18 +49,48 @@ def password_reset_request(request):
 
 
 def user_register(request):
-    form = UserRegistrationForm()
+    user_form = UserRegistrationForm()
+    profile_form = RegularUserProfileForm()
     if request.method == "POST":
-        form = UserRegistrationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
+        user_form = UserRegistrationForm(request.POST)
+        profile_form = RegularUserProfileForm(request.POST)
+        if user_form.is_valid() and profile_form.is_valid():
+            user = user_form.save(commit=False)
+            user.set_password(user_form.cleaned_data.get('password'))
+            user.save()
+            user.regular_user_profile.language = profile_form.cleaned_data.get('language')
+            user.regular_user_profile.gender = profile_form.cleaned_data.get('gender')
+            user.regular_user_profile.height = profile_form.cleaned_data.get('height')
+            user.regular_user_profile.blood_group = profile_form.cleaned_data.get('blood_group')
+            user.regular_user_profile.country = profile_form.cleaned_data.get('country')
+            user.regular_user_profile.city = profile_form.cleaned_data.get('city')
+            user.regular_user_profile.city2 = profile_form.cleaned_data.get('city2')
+            user.regular_user_profile.physical_activity = profile_form.cleaned_data.get('physical_activity')
+            user.regular_user_profile.smoking = profile_form.cleaned_data.get('smoking')
+            user.regular_user_profile.diabets = profile_form.cleaned_data.get('diabets')
+            user.regular_user_profile.ethnicity = profile_form.cleaned_data.get('ethnicity')
+            user.regular_user_profile.angina_or_heart_attack = profile_form.cleaned_data.get('angina_or_heart_attack')
+            user.regular_user_profile.menopause = profile_form.cleaned_data.get('menopause')
+            user.regular_user_profile.kidney_disease = profile_form.cleaned_data.get('kidney_disease')
+            user.regular_user_profile.atrial_fibrillation = profile_form.cleaned_data.get('atrial_fibrillation')
+            user.regular_user_profile.pressure_treatment = profile_form.cleaned_data.get('pressure_treatment')
+            user.regular_user_profile.rheumatoid_arthritis = profile_form.cleaned_data.get('rheumatoid_arthritis')
+            user.regular_user_profile.district = profile_form.cleaned_data.get('district')
+            user.regular_user_profile.town = profile_form.cleaned_data.get('town')
+            user.regular_user_profile.save()
             login(request, user)
             return redirect('profile')
         else:
-            print(form.errors)
-            return render(request, 'account/register.html', {'form': form})
+            return render(request, 'account/register.html', {
+                'user_form': user_form,
+                'profile_form': profile_form,
+            })
+
     else:
-        return render(request, 'account/register.html', {'form': form})
+        return render(request, 'account/register.html', {
+            'user_form': user_form,
+            'profile_form': profile_form,
+        })
 
 
 def user_login(request):
@@ -74,7 +105,6 @@ def user_login(request):
                 login(request, user)
                 return redirect('profile')
             else:
-                #messages.success(request, _('Wrong password or User ID'))
                 return render(request, 'account/login.html', {'form': form})
         else:
             form = UserLoginForm()
@@ -101,16 +131,46 @@ def user_account(request):
 def user_account_edit(request):
     if request.user.is_authenticated:
         if request.method == "POST":
-            form = UserUpdateForm(request.POST, instance=request.user)
-            if form.is_valid():
-                form.save()
+            user_form = UserUpdateForm(request.POST, instance=request.user)
+            profile_form = RegularUserUpdateForm(request.POST, instance=request.user.regular_user_profile)
+            if user_form.is_valid() and profile_form.is_valid():
+                user = user_form.save(commit=False)
+                user.save()
+                user.regular_user_profile.language = profile_form.cleaned_data.get('language')
+                user.regular_user_profile.gender = profile_form.cleaned_data.get('gender')
+                user.regular_user_profile.height = profile_form.cleaned_data.get('height')
+                user.regular_user_profile.blood_group = profile_form.cleaned_data.get('blood_group')
+                user.regular_user_profile.country = profile_form.cleaned_data.get('country')
+                user.regular_user_profile.city = profile_form.cleaned_data.get('city')
+                user.regular_user_profile.city2 = profile_form.cleaned_data.get('city2')
+                user.regular_user_profile.physical_activity = profile_form.cleaned_data.get('physical_activity')
+                user.regular_user_profile.smoking = profile_form.cleaned_data.get('smoking')
+                user.regular_user_profile.diabets = profile_form.cleaned_data.get('diabets')
+                user.regular_user_profile.ethnicity = profile_form.cleaned_data.get('ethnicity')
+                user.regular_user_profile.angina_or_heart_attack = profile_form.cleaned_data.get(
+                    'angina_or_heart_attack')
+                user.regular_user_profile.menopause = profile_form.cleaned_data.get('menopause')
+                user.regular_user_profile.kidney_disease = profile_form.cleaned_data.get('kidney_disease')
+                user.regular_user_profile.atrial_fibrillation = profile_form.cleaned_data.get('atrial_fibrillation')
+                user.regular_user_profile.pressure_treatment = profile_form.cleaned_data.get('pressure_treatment')
+                user.regular_user_profile.rheumatoid_arthritis = profile_form.cleaned_data.get('rheumatoid_arthritis')
+                user.regular_user_profile.district = profile_form.cleaned_data.get('district')
+                user.regular_user_profile.town = profile_form.cleaned_data.get('town')
+                user.regular_user_profile.save()
                 return redirect('profile')
             else:
-                print(form.errors)
-                return render(request, 'account/editAccount.html', {'form': form})
+                print(user_form.errors, profile_form.errors)
+                return render(request, 'account/editAccount.html', {
+                    'user_form': user_form,
+                    'profile_form': profile_form,
+                })
         else:
-            form = UserUpdateForm(instance=request.user)
-            return render(request, 'account/editAccount.html', {'form': form})
+            user_form = UserUpdateForm(instance=request.user)
+            profile_form = RegularUserUpdateForm(instance=request.user.regular_user_profile)
+            return render(request, 'account/editAccount.html', {
+                'user_form': user_form,
+                'profile_form': profile_form,
+            })
     else:
         return redirect('login')
 

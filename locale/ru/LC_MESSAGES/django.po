@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-01 19:46+0400\n"
+"POT-Creation-Date: 2021-02-04 20:01+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -633,8 +633,8 @@ msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
 msgstr ""
-"Пожалуйста, введите свой новый пароль дважды, "
-"чтобы мы могли убедиться, что вы ввели его правильно."
+"Пожалуйста, введите свой новый пароль дважды, чтобы мы могли убедиться, что "
+"вы ввели его правильно."
 
 #: .\templates\account\password_reset_confirm.html:32
 msgid "Change my password"
@@ -645,28 +645,45 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"Ссылка для сброса пароля недействительна, "
-"возможно, потому, что она уже использовалась. Запросите новый сброс пароля."
+"Ссылка для сброса пароля недействительна, возможно, потому, что она уже "
+"использовалась. Запросите новый сброс пароля."
 
 #: .\templates\account\password_reset_done.html:9
 msgid ""
 "We've emailed you instructions for setting your password, <b>if an account "
 "exists</b> with the email you entered. You should receive them shortly."
 msgstr ""
-"Мы отправили вам по электронной почте инструкции по установке пароля, <b> если учетная запись существует </b>, "
-"с указанным вами адресом электронной почты. Вы получите их в ближайшее время"
+"Мы отправили вам по электронной почте инструкции по установке пароля, <b> "
+"если учетная запись существует </b>, с указанным вами адресом электронной "
+"почты. Вы получите их в ближайшее время"
 
 #: .\templates\account\password_reset_done.html:12
 msgid ""
 "If you don't receive an email, please make sure you've entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
-"Если вы не получили электронное письмо, убедитесь, что вы ввели адрес, "
-"на который вы зарегистрировались, и проверьте папку со спамом."
+"Если вы не получили электронное письмо, убедитесь, что вы ввели адрес, на "
+"который вы зарегистрировались, и проверьте папку со спамом."
 
 #: .\templates\account\password_reset_done.html:14
 msgid "Return to home page"
 msgstr "Вернуться на главную страницу"
+
+#: .\templates\account\password_reset_email.html:4
+msgid ""
+"To initiate the password reset process for your Account, click the link "
+"below:"
+msgstr ""
+
+#: .\templates\account\password_reset_email.html:8
+msgid ""
+"If clicking the link above doesn't work, please copy and paste the URL in a "
+"new browser window instead."
+msgstr ""
+
+#: .\templates\account\password_reset_email.html:10
+msgid "Sincerely, The HealthiStory Administration"
+msgstr ""
 
 #: .\templates\account\password_reset_form.html:9
 msgid "Reset password"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-01 19:45+0400\n"
+"POT-Creation-Date: 2021-02-04 20:01+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -632,8 +632,8 @@ msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
 msgstr ""
-"Zəhmət olmasa yeni parolunuzu 2 dəfə daxil edin ki,"
-"düzgün yazdığınızı təsdiq edə bilək."
+"Zəhmət olmasa yeni parolunuzu 2 dəfə daxil edin ki,düzgün yazdığınızı təsdiq "
+"edə bilək."
 
 #: .\templates\account\password_reset_confirm.html:32
 msgid "Change my password"
@@ -644,28 +644,48 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"Şifrə sıfırlama bağlantısı etibarsız oldu, ehtimal ki, artıq istifadə edilmiştir. "
-"Xahiş edirik yeni bir şifrə sıfırlanması tələb edin."
+"Şifrə sıfırlama bağlantısı etibarsız oldu, ehtimal ki, artıq istifadə "
+"edilmiştir. Xahiş edirik yeni bir şifrə sıfırlanması tələb edin."
 
 #: .\templates\account\password_reset_done.html:9
 msgid ""
 "We've emailed you instructions for setting your password, <b>if an account "
 "exists</b> with the email you entered. You should receive them shortly."
 msgstr ""
-"Daxil etdiyiniz e-poçtla <b>bir hesab varsa </b>, parolunuzu təyin etmək üçün təlimatları e-poçtla göndərdik. "
-"Onları qısa müddətdə almalısınız"
+"Daxil etdiyiniz e-poçtla <b>bir hesab varsa </b>, parolunuzu təyin etmək "
+"üçün təlimatları e-poçtla göndərdik. Onları qısa müddətdə almalısınız"
 
 #: .\templates\account\password_reset_done.html:12
 msgid ""
 "If you don't receive an email, please make sure you've entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
-"Bir e-poçt almazsanız, qeydiyyatdan keçdiyiniz ünvanı daxil etdiyinizə əmin olun "
-"və spam qovluğunuzu yoxlayın."
+"Bir e-poçt almazsanız, qeydiyyatdan keçdiyiniz ünvanı daxil etdiyinizə əmin "
+"olun və spam qovluğunuzu yoxlayın."
 
 #: .\templates\account\password_reset_done.html:14
 msgid "Return to home page"
 msgstr "Ana səhifəyə dön"
+
+#: .\templates\account\password_reset_email.html:4
+msgid ""
+"To initiate the password reset process for your Account, click the link "
+"below:"
+msgstr ""
+"Hesabınız üçün parol sıfırlama prosesinə başlamaq üçün "
+"aşağıdakı linki vurun:"
+
+#: .\templates\account\password_reset_email.html:8
+msgid ""
+"If clicking the link above doesn't work, please copy and paste the URL in a "
+"new browser window instead."
+msgstr ""
+"Yuxarıdakı linki vurmaq işə yaramırsa, lütfən URL-ni brauzer pəncərəsinə "
+"kopyalayıb yapışdırın."
+
+#: .\templates\account\password_reset_email.html:10
+msgid "Sincerely, The HealthiStory Administration"
+msgstr "Hörmətlə, HealthiStory Administrasiyası"
 
 #: .\templates\account\password_reset_form.html:9
 msgid "Reset password"
