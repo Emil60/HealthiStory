@@ -1,9 +1,13 @@
+Live on: `healthistory.herokuapp.com`
+
 ## About
 
 The main app is HealtiStory, alongside this there are home(keeps static pages such as home page, contact page etc.),
 account (for sign in and registration), product.
 All HTML files are in templates folder. Css, images and js files are in static directory.
 For multilingual web site all translations are in locale folder. 
+
+
 
 ### Instalation
 

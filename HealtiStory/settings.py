@@ -90,9 +90,9 @@ WSGI_APPLICATION = 'HealtiStory.wsgi.application'
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'healthiStory',
-#         'USER': 'emil',
-#         'PASSWORD': 'emil',
+#         'NAME': '****',
+#         'USER': '***',
+#         'PASSWORD': '***',
 #         'HOST': 'localhost',
 #         'PORT': '3306',
 #     }
@@ -128,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # EMAIL SETTINGS
 EMAIL_HOST_USER = 'emil.ojagverdiyev@myhealthistory.com'
-EMAIL_HOST_PASSWORD = 'at7M40c~'
+EMAIL_HOST_PASSWORD = '****'
 EMAIL_HOST = 'myhealthistory.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 25
