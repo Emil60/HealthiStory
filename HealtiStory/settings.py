@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '8vov@7i!dt$o2*pewek0&z8$s8$b@0mth-^n9105fyzzyq+(eq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['healthistory.herokuapp.com', '127.0.0.1']
 
