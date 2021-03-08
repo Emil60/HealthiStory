@@ -13,6 +13,15 @@ urlpatterns = [
     path('login', views.user_login, name="login"),
     path('logout', views.user_logout, name="logout"),
 
+
+    path('doctor/profile', views.doctor_account, name="doctor_profile"),
+    path('doctor/login', views.doctor_login, name="doctor_login"),
+    path('doctor/questions', views.doctor_questions, name="doctor_questions"),
+
+
+
+
+
     path('password_reset/done/', auth_views.PasswordResetCompleteView.as_view(
         template_name='account/password_reset_done.html'),
          name='password_reset_done'),

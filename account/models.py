@@ -113,7 +113,12 @@ class RegularUser(models.Model):
 
 
 class DoctorCategory(models.Model):
-    cat_name = models.CharField(max_length=150)
+    cat_code = models.CharField(max_length=100, blank=False, null=True)
+    cat_name = models.CharField(max_length=150, blank=False, null=True)
+    language = models.CharField(choices=c.LANGUAGE_CHOICES, blank=False, max_length=100, null=True)
+
+    def __str__(self):
+        return self.cat_name
 
 
 class DoctorUser(models.Model):
@@ -149,14 +154,14 @@ def save_user_profile(sender, instance, **kwargs):
 
 
 class Question(models.Model):
-    theme = models.CharField(max_length=250, verbose_name=_("Theme"), blank=False, null=False)
+    theme = models.ForeignKey(DoctorCategory, on_delete=models.CASCADE, blank=False, null=False)
     text = models.TextField(verbose_name=_("Message"), blank=False, null=False)
     date = models.DateTimeField(auto_now_add=True)
     is_answered = models.BooleanField(default=False)
     asked_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="questions")
 
     def __str__(self):
-        return self.theme
+        return self.text
 
 
 class Answer(models.Model):

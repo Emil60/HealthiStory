@@ -112,6 +112,25 @@ def user_login(request):
     return redirect('home')
 
 
+def doctor_login(request):
+    # Log doctor in
+    if not request.user.is_authenticated:
+        if request.method == "POST":
+            form = UserLoginForm(data=request.POST)
+            if form.is_valid():
+                username = form.cleaned_data['username']
+                password = form.cleaned_data['password']
+                user = authenticate(request, username=username, password=password)
+                login(request, user)
+                return redirect('doctor_profile')
+            else:
+                return render(request, 'account/doctor/login.html', {'form': form})
+        else:
+            form = UserLoginForm()
+            return render(request, 'account/doctor/login.html', {'form': form})
+    return redirect('home')
+
+
 def user_logout(request):
     # Logout user
     if request.user.is_authenticated:
@@ -124,6 +143,21 @@ def user_logout(request):
 def user_account(request):
     if request.user.is_authenticated:
         return render(request, 'account/account.html')
+    else:
+        return redirect('login')
+
+
+def doctor_account(request):
+    if request.user.is_authenticated:
+        return render(request, 'account/doctor/doctor_account.html')
+    else:
+        return redirect('login')
+
+
+def doctor_questions(request):
+    if request.user.is_authenticated:
+        questions = Question.objects.filter(theme=request.user.doctor_profile.category)
+        return render(request, 'account/doctor/questions.html', {'questions': questions})
     else:
         return redirect('login')
 
