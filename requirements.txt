@@ -13,6 +13,6 @@ mysqlclient==2.0.1
 psycopg2==2.8.6
 python-gettext==4.0
 pytz==2020.5
-sqlparse==0.4.1
+sqlparse==0.4.2
 whitenoise==5.2.0
 geoip2==4.1.0
